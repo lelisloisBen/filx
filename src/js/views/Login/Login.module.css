@@ -14,6 +14,16 @@
     padding: 60px;
     border-radius: 5px;
 }
+.Input {
+    font-size: 1.6rem;
+    background-color: #333333;
+    border-color: #333333;
+    margin-bottom: 20px;
+}
+
+.Input::placeholder {
+    font-size: 1.2rem;
+}
 
 
 

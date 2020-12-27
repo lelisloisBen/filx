@@ -81,9 +81,17 @@ const Login = () => {
                 <div className={["col-lg-4 offset-lg-4", styles.loginContainer].join(' ')}>
 
                     <div className="row">
+                        <div className="col mb-3">
+                            <h1>
+                                Login
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div className="row">
                         <div className="col">
                             <input 
-                                className="form-control"
+                                className={["form-control", styles.Input].join(' ')}
                                 name="email"
                                 type="email" 
                                 placeholder="Email"
@@ -97,7 +105,7 @@ const Login = () => {
                     <div className="row">
                         <div className="col">
                             <input 
-                                className="form-control"
+                                className={["form-control", styles.Input].join(' ')}
                                 name="password"
                                 type="password" 
                                 placeholder="Password"
