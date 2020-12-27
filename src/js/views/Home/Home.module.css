@@ -1,26 +1,13 @@
-.section {
-    padding-top: 60px;
-}
-/* .main {
-    background: url(../../../img/home/w.jpg) no-repeat center;
-    background-size: cover;
-} */
 .main {
     background: 
     linear-gradient(
-      rgba(155, 220, 250, 0.45), 
-      rgba(124, 209, 249, 0.65)
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.65)
     ),
-    url(../../../img/home/w.jpg);
+    url(../../../img/home/background.jpg);
     background-size: cover;
 }
-.i {
-    color: #7CD1F9!important;
-    /* background-color: black; */
-    border-radius: 100%;
-    padding: 10px;
-    margin-top: -12px;
-}
+
 .whoText {
     color: #7CD1F9;
 }
@@ -29,24 +16,10 @@
     color: #000000;
 }
 .bannerInfo p {
-    margin: 0;
-    padding: 0;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    line-height: 1.9;
-    background-color: #7CD1F9;
-    border-radius: 4px;
+    color: white;
 }
-.bannerInfo h3 {
-    font-weight: 700 !important;
-    text-transform: uppercase !important;
-    font-size: 3.5em;
-    text-shadow: 3px 4px 6px rgba(45, 45, 45, 0.15);
-    font-weight: 600;
-    position: relative;
-    background-color: white;
-    padding: 20px;
-    border-radius: 4px;
+.bannerInfo h4 {
+    color: white;
 }
 .bannerInfo h3:after {
     content: "";
