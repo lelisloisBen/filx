@@ -14,9 +14,6 @@ const Login = lazy(() => import('./js/views/Login/Login'));
 const Register = lazy(() => import('./js/views/Register/Register'));
 const Wallet = lazy(() => import('./js/views/Wallet/Wallet'));
 
-
-const Rasp = lazy(() => import('./js/views/Rasp/Rasp'));
-
 function App() {
 
   const [homeUrl] = useState('https://iwash-react.herokuapp.com/');
@@ -26,8 +23,8 @@ function App() {
   const [user, setUser] = useState(null);
   const [Auth, setAuth] = useState(null);
   let tokenAuth = localStorage.getItem('token');
-  let userId = localStorage.getItem('userID');
-  let userEmail = localStorage.getItem('email');
+  // let userId = localStorage.getItem('userID');
+  // let userEmail = localStorage.getItem('email');
 
   useEffect(() => {
     const handleResize = () => setWindowHeight(window.innerHeight);
