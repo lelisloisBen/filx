@@ -16,7 +16,7 @@ const Home = () => {
                         <div className="style-banner text-center">
                             <p className={["text-wh font-weight-bold", styles.mainTitle].join(' ')}>Unlimited movies, private scenes, <br/> Porn star, and more. </p>
                             <p className={["text-li mb-2", styles.mainSubTitle1].join(' ')}>Watch anywhere, cancel anytime</p>
-                            <p className={["text-li mb-2", styles.mainSubTitle2].join(' ')}>Ready to watch? Enter your email to create or restart your membership.</p>
+                            <p className={["text-li mb-2", styles.mainSubTitle2].join(' ')}>Enter your email to create or restart your membership.</p>
 
                             
                             
