@@ -3,6 +3,8 @@ import React, { useContext } from 'react';
 import styles from './Home.module.css';
 import { UserContext } from '../../../UserContext';
 
+import tv from '../../../img/home/tv.png';
+
 const Home = () => {
 
     const {windowHeight} = useContext(UserContext);
@@ -50,12 +52,12 @@ const Home = () => {
 
             <div className={["container-fluid", styles.section1].join(' ')}>
                     <div className="row">
-                        <div className="col">
+                        <div className="col my-auto">
                             <h1>Enjoy on your TV.</h1>
                             <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h3>
                         </div>
                         <div className="col">
-                            <h3>Test</h3>
+                            <img src={tv} alt="tv"/>
                         </div>
                     </div>
             </div>
