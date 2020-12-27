@@ -4,6 +4,7 @@ import styles from './Home.module.css';
 import { UserContext } from '../../../UserContext';
 
 import tv from '../../../img/home/tv.png';
+import mobile from '../../../img/home/mobile.jpg';
 
 const Home = () => {
 
@@ -58,6 +59,18 @@ const Home = () => {
                         </div>
                         <div className="col">
                             <img src={tv} alt="tv"/>
+                        </div>
+                    </div>
+            </div>
+
+            <div className={["container-fluid", styles.section2].join(' ')}>
+                    <div className="row">
+                        <div className="col">
+                            <img src={mobile} alt="mobile"/>
+                        </div>
+                        <div className="col my-auto">
+                            <h1>Enjoy on your TV.</h1>
+                            <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h3>
                         </div>
                     </div>
             </div>
