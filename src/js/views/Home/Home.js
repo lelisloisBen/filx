@@ -48,10 +48,11 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className={styles.section1}>
+            <div className={["container-fluid", styles.section1].join(' ')}>
                     <div className="row">
                         <div className="col">
-                            <h1>bla bla bla</h1>
+                            <h1>Enjoy on your TV.</h1>
+                            <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h3>
                         </div>
                         <div className="col">
                             <h3>Test</h3>
