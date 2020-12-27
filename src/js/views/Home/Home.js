@@ -54,8 +54,8 @@ const Home = () => {
             <div className={["container-fluid", styles.section1].join(' ')}>
                     <div className="row">
                         <div className="col my-auto">
-                            <h1>Enjoy on your TV.</h1>
-                            <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h3>
+                            <h1 className={styles.section1Title1}>Enjoy on your TV.</h1>
+                            <h3 className={styles.section1Title2}>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h3>
                         </div>
                         <div className="col">
                             <img src={tv} alt="tv"/>
@@ -69,8 +69,8 @@ const Home = () => {
                             <img src={mobile} alt="mobile"/>
                         </div>
                         <div className="col my-auto">
-                            <h1>Enjoy on your TV.</h1>
-                            <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h3>
+                            <h1 className={styles.section2Title1}>Download your shows to watch offline.</h1>
+                            <h3 className={styles.section2Title2}>Save your favorites easily and always have something to watch.</h3>
                         </div>
                     </div>
             </div>

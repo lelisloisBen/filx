@@ -44,10 +44,32 @@
     background-color: black;
     color: white;
     margin-top: 8px;
-    /* padding-top: 50px;
-    padding-bottom: 50px; */
 }
-
+.section1Title1 {
+    padding-left: 12%;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+.section1Title2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    padding-left: 12%;
+}
+.section2 {
+    background-color: black;
+    color: white;
+    margin-top: 8px;
+}
+.section2Title1 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+.section2Title2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+}
 
 @media (max-width: 1440px) {
     .main {
