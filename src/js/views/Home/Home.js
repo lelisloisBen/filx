@@ -5,6 +5,7 @@ import { UserContext } from '../../../UserContext';
 
 import tv from '../../../img/home/tv.png';
 import mobile from '../../../img/home/mobile.jpg';
+import device from '../../../img/home/device-pile.png';
 
 const Home = () => {
 
@@ -71,6 +72,18 @@ const Home = () => {
                         <div className="col my-auto">
                             <h1 className={styles.section2Title1}>Download your shows to watch offline.</h1>
                             <h3 className={styles.section2Title2}>Save your favorites easily and always have something to watch.</h3>
+                        </div>
+                    </div>
+            </div>
+
+            <div className={["container-fluid", styles.section1].join(' ')}>
+                    <div className="row">
+                        <div className="col my-auto">
+                            <h1 className={styles.section1Title1}>Watch everywhere.</h1>
+                            <h3 className={styles.section1Title2}>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</h3>
+                        </div>
+                        <div className="col">
+                            <img src={device} alt="device"/>
                         </div>
                     </div>
             </div>
