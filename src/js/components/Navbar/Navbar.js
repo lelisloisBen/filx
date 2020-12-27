@@ -14,7 +14,7 @@ const NavBar = () => {
     return (
         <>
         <nav className={["navbar fixed-top navbar-expand-lg navbar-light", styles.navBarI].join(' ')}>
-            <div className="container">
+            <div className="container-fluid">
                 <Link className="navbar-brand mobile" to="/">
                    
                     <span className={styles.titleBrand}>SEXFLIX</span>
@@ -22,7 +22,7 @@ const NavBar = () => {
                 <ul className="nav navbar-nav navbar-right">
                     {!tokenAuth ?
                         <li>
-                            <Link to="/login" className={["btn", styles.btnGreen].join(' ')}> 
+                            <Link to="/login" className={["btn", styles.btnLogin].join(' ')}> 
                                 Login
                             </Link>
                         </li>
