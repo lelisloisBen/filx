@@ -48,7 +48,17 @@ const Home = () => {
                 </div>
             </div>
 
-            <br/><br/><br/>
+            <div className={styles.section1}>
+                    <div className="row">
+                        <div className="col">
+                            <h1>bla bla bla</h1>
+                        </div>
+                        <div className="col">
+                            <h3>Test</h3>
+                        </div>
+                    </div>
+            </div>
+
 
         </section>
     );

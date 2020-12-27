@@ -40,6 +40,9 @@
     padding-top: 15em;
     color: #000000;
 }
+.section1 {
+    color: white;
+}
 
 
 @media (max-width: 1440px) {
