@@ -11,6 +11,9 @@
     font-size: 2rem!important;
     border-radius: 0!important;
 }
+.mainInput::placeholder {
+    font-size: 1.4rem;
+}
 .mainButton {
     font-size: 2rem!important;
     background-color: #e50914;

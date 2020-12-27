@@ -17,14 +17,16 @@ const Home = () => {
                             <h4 className="text-wh font-weight-bold">Unlimited movies, private scenes, <br/> Porn star, and more. </h4>
                             <p className="text-li mb-2">Watch anywhere, cancel anytime</p>
                             <p className="text-li mb-2">Ready to watch? Enter your email to create or restart your membership.</p>
-            
+
+                            
+                            
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 offset-lg-3">
                                     <div class="input-group input-group-lg">
                                     <input 
                                         type="text" 
                                         className={["form-control input-lg", styles.mainInput].join(' ')} 
-                                        id="search-church" 
+                                        id="search" 
                                         placeholder="Email address"  
                                     />
                                     <span class="input-group-btn">
@@ -37,8 +39,9 @@ const Home = () => {
                                     </span>
                                     </div>
                                 </div>
-                                </div>
                             </div>
+
+                        </div>
 
                         
                     </div>
