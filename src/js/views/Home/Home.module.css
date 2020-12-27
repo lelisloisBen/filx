@@ -7,6 +7,20 @@
     url(../../../img/home/net.jpg);
     background-size: cover;
 }
+.mainInput {
+    font-size: 2rem!important;
+    border-radius: 0!important;
+}
+.mainButton {
+    font-size: 2rem!important;
+    background-color: #e50914;
+    color: white;
+    border-radius: 0;
+}
+.mainButton:hover {
+    background-color: darkred;
+    color: white;
+}
 
 .whoText {
     color: #7CD1F9;

@@ -23,13 +23,13 @@ const Home = () => {
                                     <div class="input-group input-group-lg">
                                     <input 
                                         type="text" 
-                                        class="form-control input-lg" 
+                                        className={["form-control input-lg", styles.mainInput].join(' ')} 
                                         id="search-church" 
-                                        placeholder="Your location (City, State, ZIP)" 
+                                        placeholder="Email address"  
                                     />
                                     <span class="input-group-btn">
                                         <button 
-                                            class="btn btn-danger btn-lg" 
+                                            className={["btn btn-danger btn-lg", styles.mainButton].join(' ')}
                                             type="submit"
                                         >
                                             Search
@@ -44,6 +44,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+            <br/><br/><br/>
 
         </section>
     );
