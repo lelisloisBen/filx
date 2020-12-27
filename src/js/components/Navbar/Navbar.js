@@ -25,9 +25,6 @@ const NavBar = () => {
                             <Link to="/login" className={["btn", styles.btnGreen].join(' ')}> 
                                 Login
                             </Link>
-                            <Link to="/register" className={["btn", styles.btnGreen].join(' ')}> 
-                                Register
-                            </Link>
                         </li>
                     : 
                         <li>
