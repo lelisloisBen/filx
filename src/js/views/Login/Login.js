@@ -1,102 +1,118 @@
 import React, { useState, useContext } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { UserContext } from '../../../UserContext';
 import styles from './Login.module.css';
-import swal from 'sweetalert';
-
-import coin from '../../../img/coin.png';
+// import swal from 'sweetalert';
 
 const Login = () => {
 
-    let history = useHistory();
+    // let history = useHistory();
 
+    const {windowHeight} = useContext(UserContext);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const {setAuth} = useContext(UserContext);
-    const {backen_url} = useContext(UserContext);
+    // const {setAuth} = useContext(UserContext);
+    // const {backen_url} = useContext(UserContext);
 
     const loginFormHandler = () => {
-        let userLoginData = JSON.stringify({
-            "email": email,
-            "password": password
-        });
-        fetch(backen_url+'/login', {
-            method: 'POST',
-            body: userLoginData,
-            cors: 'no-cors',
-            headers:{
-                'Content-Type': 'application/json'
-            }
-            }).then(res => res.json())
-            .then(response => {
-                let token = response.token;
-                let userID = response.id;
-                let email = response.email;
-                let firstname = response.firstname;
-                let lastname = response.lastname;
-                let avatar = response.avatar;
-                let wallet = response.wallet;
-                if (!token && !email && !firstname && !lastname ) {
-                    swal("Sorry we couldn't find an account with that email.", "Try to register first.!", "error", {
-                        button: "TRY AGAIN!",
-                      })
-                    // alert("Sorry we couldn't find an account with that email.\n\n Try to register first.")
-                } else {
-                    // alert('LOGIN SUCCESSFUL');
-                    localStorage.setItem('token', token);
-                    localStorage.setItem('userID', userID);
-                    localStorage.setItem('email', email);
-                    localStorage.setItem('firstname', firstname);
-                    localStorage.setItem('lastname', lastname);
-                    localStorage.setItem('avatar', avatar);
-                    localStorage.setItem('wallet', wallet);
-                    setAuth({
-                        'token': token,
-                        'userID': userID,
-                        'email': email,
-                        'firstname': firstname,
-                        'lastname': lastname,
-                        'avatar': avatar,
-                        'wallet': wallet
-                    })
-                    swal("LOGIN SUCCESSFUL!", "Welcome to iWash", "success", {
-                        button: "Let's Wash",
-                      }).then(() => {
-                            history.push('/');
-                          });
+        // let userLoginData = JSON.stringify({
+        //     "email": email,
+        //     "password": password
+        // });
+        // fetch(backen_url+'/login', {
+        //     method: 'POST',
+        //     body: userLoginData,
+        //     cors: 'no-cors',
+        //     headers:{
+        //         'Content-Type': 'application/json'
+        //     }
+        //     }).then(res => res.json())
+        //     .then(response => {
+        //         let token = response.token;
+        //         let userID = response.id;
+        //         let email = response.email;
+        //         let firstname = response.firstname;
+        //         let lastname = response.lastname;
+        //         let avatar = response.avatar;
+        //         let wallet = response.wallet;
+        //         if (!token && !email && !firstname && !lastname ) {
+        //             swal("Sorry we couldn't find an account with that email.", "Try to register first.!", "error", {
+        //                 button: "TRY AGAIN!",
+        //               })
+        //             // alert("Sorry we couldn't find an account with that email.\n\n Try to register first.")
+        //         } else {
+        //             // alert('LOGIN SUCCESSFUL');
+        //             localStorage.setItem('token', token);
+        //             localStorage.setItem('userID', userID);
+        //             localStorage.setItem('email', email);
+        //             localStorage.setItem('firstname', firstname);
+        //             localStorage.setItem('lastname', lastname);
+        //             localStorage.setItem('avatar', avatar);
+        //             localStorage.setItem('wallet', wallet);
+        //             setAuth({
+        //                 'token': token,
+        //                 'userID': userID,
+        //                 'email': email,
+        //                 'firstname': firstname,
+        //                 'lastname': lastname,
+        //                 'avatar': avatar,
+        //                 'wallet': wallet
+        //             })
+        //             swal("LOGIN SUCCESSFUL!", "Welcome to iWash", "success", {
+        //                 button: "Let's Wash",
+        //               }).then(() => {
+        //                     history.push('/');
+        //                   });
                     
-                }
-            })
-            .catch(error => {
-                swal("Something Went Wrong!", JSON.stringify("error: => "+ error), "error", {
-                    button: "OK",
-                  })
-            });
+        //         }
+        //     })
+        //     .catch(error => {
+        //         swal("Something Went Wrong!", JSON.stringify("error: => "+ error), "error", {
+        //             button: "OK",
+        //           })
+        //     });
     }
 
     return (
-        <section className={styles.section} >
-                <a href="/"><img className={styles.coin} src={coin} alt="coin"/></a> 
-                <br/>
-                <input 
-                    className={styles.inputForm} 
-                    name="email"
-                    type="email" 
-                    placeholder="Email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    autoComplete="on"
-                />
-                <br/>
-                <input 
-                    className={styles.inputForm} 
-                    name="password"
-                    type="password" 
-                    placeholder="Password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                />
+        <section className={styles.main} style={{minHeight: windowHeight}}>
+            
+            <div className="row">
+                <div className={["col-lg-4 offset-lg-4", styles.loginContainer].join(' ')}>
+
+                    <div className="row">
+                        <div className="col">
+                            <input 
+                                className="form-control"
+                                name="email"
+                                type="email" 
+                                placeholder="Email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                autoComplete="on"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col">
+                            <input 
+                                className="form-control"
+                                name="password"
+                                type="password" 
+                                placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+                
+                
                 <br/>
                 
                 <button 
