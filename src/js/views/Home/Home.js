@@ -88,6 +88,30 @@ const Home = () => {
                     </div>
             </div>
 
+            <div className={["container-fluid", styles.section4].join(' ')}>
+                <p className={["text-li mb-2", styles.section4Title].join(' ')}>Enter your email to create or restart your membership.</p>
+                <div class="row">
+                    <div class="col-12 col-lg-6 offset-lg-3 col-md-6 offset-md-3">
+                        <div class="input-group input-group-lg">
+                        <input 
+                            type="text" 
+                            className={["form-control input-lg", styles.mainInput].join(' ')} 
+                            id="search" 
+                            placeholder="Email address"  
+                        />
+                        <span class="input-group-btn">
+                            <button 
+                                className={["btn btn-danger btn-lg", styles.mainButton].join(' ')}
+                                type="submit"
+                            >
+                                Search
+                            </button>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </section>
     );
