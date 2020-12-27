@@ -2,10 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './Navbar.module.css';
-import coin from '../../../img/coin.png';
-import geek from '../../../img/presentation/4geeks.png';
 
-const IwashNavBar = () => {
+const NavBar = () => {
     
     let tokenAuth = localStorage.getItem('token');
     let firstname = localStorage.getItem('firstname');
@@ -18,10 +16,8 @@ const IwashNavBar = () => {
         <nav className={["navbar fixed-top navbar-expand-lg navbar-light", styles.navBarI].join(' ')}>
             <div className="container">
                 <Link className="navbar-brand mobile" to="/">
-                    <img src={coin} width="30" height="30" className="d-inline-block align-top" alt="coin"/>
-                    &nbsp;
-                    <i className="fas fa-info"></i>
-                    <span className={styles.wash}>Wash</span>
+                   
+                    <span className={styles.titleBrand}>SEXFLIX</span>
                 </Link>
                 <ul className="nav navbar-nav navbar-right">
                     {!tokenAuth ?
@@ -31,9 +27,6 @@ const IwashNavBar = () => {
                             </Link>
                             <Link to="/register" className={["btn", styles.btnGreen].join(' ')}> 
                                 Register
-                            </Link>
-                            <Link to="/presentation" className={["btn", styles.btnGreen].join(' ')}> 
-                                <img src={geek} alt="4geeks" width="25px" />
                             </Link>
                         </li>
                     : 
@@ -72,4 +65,4 @@ const IwashNavBar = () => {
     );
 };
 
-export default IwashNavBar;
+export default NavBar;

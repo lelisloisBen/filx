@@ -1,5 +1,5 @@
 .navBarI {
-    background-color: white;
+    background-color: transparent!important;
 }
 .btnGreen {
     background-color: #7CD1F9!important;
@@ -11,8 +11,8 @@
 .btnGreen:hover {
     background-color: #9BDCFA!important;
 }
-.wash {
-    vertical-align: text-top;
+.titleBrand {
+    font-weight: bold;
 }
 .dropBtn {
     background-color: #7CD1F9;
