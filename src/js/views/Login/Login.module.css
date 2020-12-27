@@ -24,7 +24,14 @@
 .Input::placeholder {
     font-size: 1.2rem;
 }
-
+.btnLogin {
+    background-color: #e50914;
+    color: white;
+}
+.btnLogin::hover {
+    background-color: darkred;
+    color: white;
+}
 
 
 

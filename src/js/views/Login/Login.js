@@ -102,6 +102,7 @@ const Login = () => {
                         </div>
                     </div>
 
+
                     <div className="row">
                         <div className="col">
                             <input 
@@ -115,6 +116,17 @@ const Login = () => {
                         </div>
                     </div>
                     
+                    <div className="row">
+                        <div className="col">
+                            <button 
+                                className={["btn btn-danger form-control",styles.btnLogin].join(' ')}
+                                onClick={loginFormHandler}
+                            >
+                                Login
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -123,12 +135,7 @@ const Login = () => {
                 
                 <br/>
                 
-                <button 
-                    className={["btn",styles.buttLogin].join(' ')}
-                    onClick={loginFormHandler}
-                >
-                    Login
-                </button>
+               
 
                 <br/>
                 <br/>
