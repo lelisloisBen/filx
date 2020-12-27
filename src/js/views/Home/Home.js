@@ -14,7 +14,7 @@ const Home = () => {
                 <div className={styles.bannerInfo}>
                     <div className="container">
                         <div className="style-banner text-center">
-                            <h4 className="text-wh font-weight-bold text-uppercase">Unlimited movies, <br/> Porn star, and more. </h4>
+                            <h4 className="text-wh font-weight-bold">Unlimited movies, private scenes, <br/> Porn star, and more. </h4>
                             <p className="text-li mb-2">Watch anywhere, cancel anytime</p>
                             <p className="text-li mb-2">Ready to masturbate? Enter your email to create membership.</p>
                         </div>
