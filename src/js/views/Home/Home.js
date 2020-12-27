@@ -14,14 +14,14 @@ const Home = () => {
                 <div className={styles.bannerInfo}>
                     <div className="container">
                         <div className="style-banner text-center">
-                            <h4 className="text-wh font-weight-bold">Unlimited movies, private scenes, <br/> Porn star, and more. </h4>
-                            <p className="text-li mb-2">Watch anywhere, cancel anytime</p>
-                            <p className="text-li mb-2">Ready to watch? Enter your email to create or restart your membership.</p>
+                            <p className={["text-wh font-weight-bold", styles.mainTitle].join(' ')}>Unlimited movies, private scenes, <br/> Porn star, and more. </p>
+                            <p className={["text-li mb-2", styles.mainSubTitle1].join(' ')}>Watch anywhere, cancel anytime</p>
+                            <p className={["text-li mb-2", styles.mainSubTitle2].join(' ')}>Ready to watch? Enter your email to create or restart your membership.</p>
 
                             
                             
                             <div class="row">
-                                <div class="col-lg-6 offset-lg-3">
+                                <div class="col-12 col-lg-6 offset-lg-3 col-md-6 offset-md-3">
                                     <div class="input-group input-group-lg">
                                     <input 
                                         type="text" 

@@ -7,6 +7,18 @@
     url(../../../img/home/net.jpg);
     background-size: cover;
 }
+.mainTitle {
+    font-size: 3rem;
+    color: white;
+}
+.mainSubTitle1 {
+    font-size: 2rem;
+    color: white;
+}
+.mainSubTitle2 {
+    font-size: 1.2rem;
+    color: white;
+}
 .mainInput {
     font-size: 2rem!important;
     border-radius: 0!important;
@@ -24,83 +36,11 @@
     background-color: darkred;
     color: white;
 }
-
-.whoText {
-    color: #7CD1F9;
-}
 .bannerInfo {
     padding-top: 15em;
     color: #000000;
 }
-.bannerInfo p {
-    color: white;
-}
-.bannerInfo h4 {
-    color: white;
-}
-.bannerInfo h3:after {
-    content: "";
-        background: #000000;
-        width: 80px;
-        height: 3px;
-        position: absolute;
-        bottom: -20px;
-        left: 46%;
-}
-.middleInfo {
-    background: url(../../../img/home/w2.jpg) no-repeat center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-}
-.newCust {
-    display: block;
-    font-size: 17px;
-    color: #7CD1F9;
-    font-weight: 400;
-}
-.buttonStyle {
-    padding: 11px 30px;
-    border: none;
-    color: #ffffff;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -o-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    border: 2px solid #BBD5E4;
-    background: #7CD1F9;
-    display: inline-block;
-}
-.buttonStyle2 {
-    border: 2px solid #fff;
-    background: transparent;
-}
-.buttonStyle:hover {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -webkit-transform: translateY(10px);
-    -ms-transform: translateY(10px);
-    -o-transform: translateY(10px);
-    -ms-transform: translateY(10px);
-    transform: translateY(10px);
-}
 
-.ourService {
-    display: block;
-    font-size: 17px;
-    color: #7CD1F9;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
 
 @media (max-width: 1440px) {
     .main {
