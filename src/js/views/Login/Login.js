@@ -127,23 +127,18 @@ const Login = () => {
                         </div>
                     </div>
 
+                    <div className="row">
+                        <div className="col">
+                            <Link to="/" className={styles.forgotP}>
+                                Forgot password?
+                            </Link>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            
-                
-                
-                <br/>
-                
-               
-
-                <br/>
-                <br/>
-                <Link to="/" className={styles.forgotP}>
-                    Forgot password?
-                </Link>
-           
-
+        
         </section>
     );
 };

@@ -27,6 +27,7 @@
 .btnLogin {
     background-color: #e50914;
     color: white;
+    font-size: 1.6rem;
 }
 .btnLogin::hover {
     background-color: darkred;
