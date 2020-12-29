@@ -38,7 +38,7 @@ const Home = () => {
                                             className={["btn btn-danger btn-lg", styles.mainButton].join(' ')}
                                             type="submit"
                                         >
-                                            Search
+                                            Register
                                         </button>
                                     </span>
                                     </div>
